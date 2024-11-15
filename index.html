@@ -181,16 +181,13 @@
         }
     }
     
+    let menuIcon = document.querySelector('#menu-icon');
+    let navbar = document.querySelector('.navbar');
 
-                
-                    
-                
-            
-        
-    
-
-</script>
-<script>
+    menuIcon.onclick = () => {
+        menuIcon.classList.toggle('bx-x')
+        navbar.classList.toggle('active');
+    }
     const scriptURL = https://script.google.com/macros/s/AKfycbwA5-aRJM181JoVL-bRUPZyfOyXpaHw5IWGQ11yxEm2qVPbHcmQ7g4BgEF5CrnTpOaJRg/exec
     const form = document.forms['submit-to-google-sheet']
   
